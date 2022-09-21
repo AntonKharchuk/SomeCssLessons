@@ -1,0 +1,51 @@
+:root{
+	--marg: 20px;
+	--minus: 5px;
+
+}
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+html {
+	box-sizing: border-box;
+}
+body, p, h1, h2, h3, h4, ul, ol{
+	margin:  0;
+	padding: 0;
+}
+
+
+.header {
+	background-color: yellowgreen;
+
+}
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	background-color: aqua;
+	padding: var(--marg);
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.row div {
+	padding: 20px;
+	border: 1px solid darkblue;
+	background-color: antiquewhite;
+	margin: 0 auto;
+	
+}
+.len-2 {
+	width: calc(50% - var(--minus));
+}
+.len-4 {
+	width: calc(25% - var(--minus));
+}
+.len-8 {
+	width: calc(12.5% - var(--minus));
+
+}
+
